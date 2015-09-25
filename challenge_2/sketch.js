@@ -7,12 +7,22 @@ function setup() {
 
 function draw() {
 	// clear the background
-	background(50, 150, 150);
-
-	// set a fill color
-	fill(255, 255, 255);
-
+	background(130, 130, 170);
 	// draw the ellipse
-	var diameter = random(100, 200);
-	ellipse(320, 180, diameter, diameter);
+	stroke(255, 255, 255);
+	noFill();
+	var diameter = (53);
+	var diameterT = (53);
+		for (var y = 0; y < 4; y++)
+			if ( y === 2){
+					stroke(255, 255, 255);
+					noFill();
+			}	else {
+					stroke(0, 0, 0);
+					noFill();
+			}
+			for (var x = 0; x< 6; x++){
+		 		ellipse(x * 70, y * 10 + 220, diameter, diameterT);
+}
+
 }
